@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual de Usuario - Sistema de Consultorio Médico</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📘 Manual de Usuario</h1>
+    <h2>Sistema de Consultorio Médico - Cardiología</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#introduccion">Introducción</a></li>
+      <li><a href="#login">Inicio de Sesión</a></li>
+      <li><a href="#principal">Ventana Principal</a></li>
+      <li><a href="#pacientes">Módulo Pacientes</a></li>
+      <li><a href="#turnos">Módulo Turnos</a></li>
+      <li><a href="#ficha">Módulo Ficha Médica</a></li>
+      <li><a href="#facturacion">Módulo Facturación</a></li>
+      <li><a href="#usuarios">Módulo Usuarios</a></li>
+      <li><a href="#doctores">Módulo Doctores</a></li>
+      <li><a href="#errores">Errores Comunes</a></li>
+      <li><a href="#creditos">Créditos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="introduccion">
+      <h2>1. Introducción</h2>
+      <p>El sistema de consultorio médico es una aplicación diseñada para gestionar pacientes, turnos, fichas médicas, facturación y usuarios de forma centralizada.</p>
+      <p>Este manual está pensado para guiar paso a paso al usuario en cada módulo, explicando sus funciones y el flujo de trabajo.</p>
+      <ul>
+        <li>Lenguaje: <b>Python 3 + Tkinter</b></li>
+        <li>Base de datos: <b>MySQL</b></li>
+        <li>Requiere librerías: <b>mysql.connector</b></li>
+      </ul>
+    </section>
+
+    <section id="login">
+      <h2>2. Pantalla de Inicio de Sesión</h2>
+      <p>Al ejecutar la aplicación, se mostrará una ventana de inicio de sesión donde se debe ingresar el <b>usuario</b> y <b>contraseña</b> registrados.</p>
+      <p>El acceso está restringido por roles: <b>Administrador</b>, <b>Cardiólogo</b> o <b>Secretaria</b>.</p>
+      <img src="img/inicio_de_sesion.png" alt="Ventana de inicio de sesión" class="imagen">
+    </section>
+
+    <section id="principal">
+      <h2>3. Ventana Principal</h2>
+      <p>Una vez iniciado sesión, se muestra la interfaz principal con pestañas para acceder a los diferentes módulos.</p>
+      <img src="img/ventana_principal.png" alt="Ventana principal del sistema" class="imagen">
+    </section>
+
+    <section id="pacientes">
+      <h2>4. Módulo Pacientes 👥</h2>
+      <p>Permite registrar, modificar, eliminar y buscar pacientes. Incluye campos como DNI, nombre, apellido, teléfono, email, dirección y obra social.</p>
+      <ul>
+        <li><b>Nuevo:</b> crea un paciente nuevo.</li>
+        <li><b>Editar:</b> abre el formulario del paciente seleccionado.</li>
+        <li><b>Eliminar:</b> borra el registro (si no tiene turnos activos).</li>
+      </ul>
+      <img src="img/nuevo_paciente.png" alt="Módulo pacientes" class="imagen">
+      <img src="img/editar_paciente.png" alt="Módulo pacientes" class="imagen">
+      <img src="img/eliminar_paciente.png" alt="Módulo pacientes" class="imagen">
+      
+    </section>
+
+    <section id="turnos">
+      <h2>5. Módulo Turnos 📅</h2>
+      <p>En este módulo se pueden crear, modificar o cancelar turnos. Permite filtrar por fecha o ver próximos turnos.</p>
+      <img src="img/turnos.png" alt="Módulo turnos" class="imagen">
+    </section>
+
+    <section id="ficha">
+      <h2>6. Módulo Ficha Médica 📋</h2>
+      <p>La ficha médica contiene tres secciones: <b>Consultas Médicas</b>, <b>Recetas Médicas</b> y <b>Estudios Médicos</b>. Cada ficha está asociada a un paciente.</p>
+      <p>Desde aquí, el médico puede registrar diagnósticos, tratamientos y resultados de estudios.</p>
+      <img src="img/ficha_medica_inicio.png" alt="Ficha médica del paciente" class="imagen">
+      <img src="img/consulta_medica.png" alt="Ficha médica del paciente" class="imagen">
+      <img src="img/receta_medica.png" alt="Ficha médica del paciente" class="imagen">
+      <img src="img/estudio_medico.png" alt="Ficha médica del paciente" class="imagen">
+    </section>
+
+    <section id="facturacion">
+      <h2>7. Módulo Facturación 💰</h2>
+      <p>Permite emitir, editar o eliminar facturas relacionadas con turnos. Se puede marcar una factura como pagada.</p>
+      <img src="img/facturacion.png" alt="Módulo de facturación" class="imagen">
+      <img src="img/nueva_factura.png" alt="Módulo de facturación" class="imagen">
+      
+      
+    </section>
+
+    <section id="usuarios">
+      <h2>8. Módulo Usuarios 👤</h2>
+      <p>Desde aquí el administrador puede crear nuevos usuarios, asignar roles y vincular doctores.</p>
+      <img src="img/usuarios.png" alt="Gestión de usuarios" class="imagen">
+      <img src="img/nuevo_usuario.png" alt="Gestión de usuarios" class="imagen">
+      <img src="img/editar_usuario.png" alt="Gestión de usuarios" class="imagen">
+      <img src="img/eliminar_usuario.png" alt="Gestión de usuarios" class="imagen">
+      <img src="img/cambiar_contra_usuario.png" alt="Gestión de usuarios" class="imagen">
+    </section>
+
+    <section id="doctores">
+      <h2>9. Módulo Doctores 👨‍⚕️</h2>
+      <p>Permite registrar los doctores disponibles en el consultorio y asignarles sus especialidades.</p>
+      <img src="img/doctores.png" alt="Módulo doctores" class="imagen">
+    </section>
+
+    <section id="errores">
+      <h2>10. Errores Comunes</h2>
+      <ul>
+        <li><b>Error de conexión:</b> verificar MySQL y credenciales en <code>database/connection.py</code>.</li>
+        <li><b>Base de datos vacía:</b> importar el script SQL de estructura.</li>
+        <li><b>Error en login:</b> revisar usuarios en la tabla <code>Usuario</code>.</li>
+      </ul>
+    </section>
+
+    <section id="creditos">
+      <h2>11. Créditos</h2>
+      <p><b>Alumno:</b> Gamarro Claudio Ezequiel<br>
+        <b>Alumno:</b> Diaz Emilse<br>
+        <b>Alumno:</b> Montenegro Rober<br>
+         <b>Materia:</b> Taller de Programación <br>
+         <b>Profesor:</b> Acuña Arias Carla<br>
+         <b>Instituto:</b> IES Alfredo Coviello<br>
+         <b>Año:</b> 2025</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sistema de Consultorio Médico - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
